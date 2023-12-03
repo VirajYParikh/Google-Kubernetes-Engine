@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-dl-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-dl-app
+  template:
+    metadata:
+      labels:
+        app: my-dl-app
+    spec:
+      containers:
+      - name: my-dl-app
+        image: gcr.io/my-project-27779-401121/my-dl-app:latest
