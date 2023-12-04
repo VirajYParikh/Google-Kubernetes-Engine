@@ -3,9 +3,12 @@
 
 ### Objective:
 
+
 The objective of this assignment revolves around running a Deep Learning model utilizing Docker and Kubernetes with the help of the Google Kubernetes Engine provided by Google. 
 
+
 There are several steps involved while doing the same, which are documented and explained below:
+
 
 Steps:
 
