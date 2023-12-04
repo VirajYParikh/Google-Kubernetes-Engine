@@ -26,9 +26,10 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 5. Initialize CLI: `gcloud init`
 6. Install the GKE Cloud auth plugin using: `gcloud components install gke-gcloud-auth-plugin`
 
+
 Step 3: 
 Build and Move the Docker image to Google Kubernetes Engine:
-1. Create the Dockerfile script: `Dockerfile`
+1. Create the Dockerfile script: ["Dockerfile"]()
 2. Build the docker image using the following syntax:
 
 
@@ -59,6 +60,7 @@ Step 4: Fetch the k8s cluster endpoint to deploy the yaml file using the format:
 
 
 `gcloud container clusters get-credentials autopilot-cluster-1 --zone=us-central1`
+
 
 Step 5: Deploy the application on GKE using Kubectl and the yaml file
 1. Install Kubernetes on your machine: `brew install kubectl`
