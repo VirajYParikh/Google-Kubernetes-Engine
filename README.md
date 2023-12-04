@@ -68,10 +68,18 @@ Step 4: Fetch the k8s cluster endpoint to deploy the yaml file using the format:
 
 Step 5: Deploy the application on GKE using Kubectl and the yaml file
 1. Install Kubernetes on your machine: `brew install kubectl`
-2. Create persistent volume claim yaml file for Storage (In GKE we do not need to create a PV yaml since GKE automatically assigns volume): ["pvc.yaml"]()
+2. Create persistent volume claim yaml file for Storage (In GKE we do not need to create a PV yaml since GKE automatically assigns volume): ["pvc.yaml"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/pvc.yaml)
 3. Create a .yaml file for deployment: ["dl_deployment.yaml"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/dl_deployment.yaml)
-4. Run the command to deploy the .yaml file in gke: `kubectl apply -f dl_deployment.yaml`
-5. Run the command to check the status of your deployment: `kubectl get pods`
+4. Run the command to deploy the pvc yamil in gke: `kubectl apply -f pvc.yaml`
+5. Run the command to check the status of your deployment: `kubectl get pvc`
+
+
+<img width="1341" alt="Screenshot 2023-12-03 at 11 51 46 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/b958d1bf-8fd7-45f4-8bf1-ccd1abc15c64">
+
+
+6. Run the command to deploy the .yaml file in gke: `kubectl apply -f dl_deployment.yaml`
+7. Run the command to check the status of your deployment: `kubectl get pods`
+
 
 
 <img width="552" alt="Screenshot 2023-12-03 at 8 36 10 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/aa479151-cfba-4b75-b2da-77a8eada9ecd">
