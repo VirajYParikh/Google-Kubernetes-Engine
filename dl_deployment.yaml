@@ -15,3 +15,10 @@ spec:
       containers:
       - name: my-dl-app
         image: gcr.io/my-project-27779-401121/my-dl-app:latest
+        volumeMounts:
+        - mountPath: "/app/new_data"
+          name: model-data-volume
+      volumes:
+      - name: model-data-volume
+        persistentVolumeClaim:
+          claimName: new-data-pvc
