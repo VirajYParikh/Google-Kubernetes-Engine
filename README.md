@@ -62,7 +62,7 @@ Step 4: Fetch the k8s cluster endpoint to deploy the yaml file using the format:
 
 Step 5: Deploy the application on GKE using Kubectl and the yaml file
 1. Install Kubernetes on your machine: `brew install kubectl`
-2. Create a .yaml file for deployment: [".yaml"]()`dl_deployment.yaml`
+2. Create a .yaml file for deployment: ["dl_deployment.yaml"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/dl_deployment.yaml)
 3. 
 
 
