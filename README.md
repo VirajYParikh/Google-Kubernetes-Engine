@@ -31,7 +31,7 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 
 Step 3: 
 Build and Move the Docker image to Google Kubernetes Engine:
-1. Create the Dockerfile script: ["Dockerfile"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/Dockerfile)
+1. Create the Dockerfile script: <div align="center>["Dockerfile"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/Dockerfile) </div>
 2. Build the docker image using the following syntax:
 
 
