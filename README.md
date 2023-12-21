@@ -21,9 +21,8 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 2. Enable the Kubernetes Engine API along with the Cloud Computing Engine API.
 3. Create the k8s cluster using the GCP interface by going to the Kubernetes engine console 
 
-<div align="center">
 ![image](https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/43604755-454a-47ed-8653-5129089a3ee1)
-</div>
+
 
 4. Install the Google Cloud SDK using: `brew install google-cloud-sdk`
 5. Initialize CLI: `gcloud init`
