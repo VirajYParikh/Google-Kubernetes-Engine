@@ -25,7 +25,7 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 
 
 4. Install the Google Cloud SDK using: `brew install google-cloud-sdk`
-5. Initialize CLI: `gcloud init`
+5. Initialize CLI: ```bash gcloud init```
 6. Install the GKE Cloud auth plugin using: `gcloud components install gke-gcloud-auth-plugin`
 
 
