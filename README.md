@@ -21,9 +21,9 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 2. Enable the Kubernetes Engine API along with the Cloud Computing Engine API.
 3. Create the k8s cluster using the GCP interface by going to the Kubernetes engine console 
 
-
+<div align="center">
 ![image](https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/43604755-454a-47ed-8653-5129089a3ee1)
-
+</div>  
 
 4. Install the Google Cloud SDK using: `brew install google-cloud-sdk`
 5. Initialize CLI: `gcloud init`
@@ -41,9 +41,9 @@ Build and Move the Docker image to Google Kubernetes Engine:
 
 `docker build -t gcr.io/my-project-27779-401121/my-dl-app:latest .`
 
-
+<div align="center">
 <img width="1316" alt="Screenshot 2023-12-03 at 7 11 22 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/bdc83f8b-f486-4b1e-a45a-a865082749d6">
-
+</div>
 
 3. Push the docker image to the Google Cloud engine repository (container repo) using the following syntax:
 
@@ -53,9 +53,9 @@ Build and Move the Docker image to Google Kubernetes Engine:
 
 `docker push gcr.io/my-project-27779-401121/my-dl-app:latest`
 
-
+<div align="center"
 <img width="1316" alt="Screenshot 2023-12-03 at 7 16 36 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/906ca47b-1bee-492b-8835-f5470aab1bc8">
-
+</div>
 
 Step 4: Fetch the k8s cluster endpoint to deploy the yaml file using the format: 
 
@@ -73,17 +73,17 @@ Step 5: Deploy the application on GKE using Kubectl and the yaml file
 4. Run the command to deploy the pvc yamil in gke: `kubectl apply -f pvc.yaml`
 5. Run the command to check the status of your deployment: `kubectl get pvc`
 
-
+<div align="center">
 <img width="1341" alt="Screenshot 2023-12-03 at 11 51 46 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/b958d1bf-8fd7-45f4-8bf1-ccd1abc15c64">
-
+</div>
 
 6. Run the command to deploy the .yaml file in gke: `kubectl apply -f dl_deployment.yaml`
 7. Run the command to check the status of your deployment: `kubectl get pods`
 
 
-
+<div align="center">
 <img width="552" alt="Screenshot 2023-12-03 at 8 36 10 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/aa479151-cfba-4b75-b2da-77a8eada9ecd">
-
+</div>
 
 5. To see the final output in the pod use the following command syntax:
 
