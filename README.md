@@ -10,12 +10,12 @@ The objective of this assignment revolves around running a Deep Learning model u
 There are several steps involved while doing the same, which are documented and explained below:
 
 
-Steps:
+#### Steps:
 
-Step 1: 
+##### Step 1: 
 Creating the script to be run which comprises the deep learning model and the data. This script is present in mnist/main.py file. 
 
-Step 2: 
+##### Step 2: 
 Getting the Google Kubernetes Engine ready for deployment of the docker image and k8s cluster:
 1. Login to Google Cloud Console
 2. Enable the Kubernetes Engine API along with the Cloud Computing Engine API.
@@ -29,7 +29,7 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 6. Install the GKE Cloud auth plugin using: `gcloud components install gke-gcloud-auth-plugin`
 
 
-Step 3: 
+##### Step 3: 
 Build and Move the Docker image to Google Kubernetes Engine:
 1. Create the Dockerfile script: ["Dockerfile"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/Dockerfile)
 2. Build the docker image using the following syntax:
@@ -57,7 +57,7 @@ Build and Move the Docker image to Google Kubernetes Engine:
 <img width="1316" alt="Screenshot 2023-12-03 at 7 16 36 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/906ca47b-1bee-492b-8835-f5470aab1bc8">
 </div>
 
-Step 4: Fetch the k8s cluster endpoint to deploy the yaml file using the format: 
+##### Step 4: Fetch the k8s cluster endpoint to deploy the yaml file using the format: 
 
 
 `gcloud container clusters get-credentials {cluster-name} --zone={zone-name}`;
@@ -66,7 +66,7 @@ Step 4: Fetch the k8s cluster endpoint to deploy the yaml file using the format:
 `gcloud container clusters get-credentials autopilot-cluster-1 --zone=us-central1`
 
 
-Step 5: Deploy the application on GKE using Kubectl and the yaml file
+##### Step 5: Deploy the application on GKE using Kubectl and the yaml file
 1. Install Kubernetes on your machine: `brew install kubectl`
 2. Create persistent volume claim yaml file for Storage (In GKE we do not need to create a PV yaml since GKE automatically assigns volume): ["pvc.yaml"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/pvc.yaml)
 3. Create a .yaml file for deployment: ["dl_deployment.yaml"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/dl_deployment.yaml)
