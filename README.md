@@ -31,7 +31,7 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 
 Step 3: 
 Build and Move the Docker image to Google Kubernetes Engine:
-1. Create the Dockerfile script: <div align="center>["Dockerfile"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/Dockerfile) </div>
+1. Create the Dockerfile script: ["Dockerfile"](https://github.com/VirajYParikh/GoogleKubernetesEngine/blob/main/Dockerfile)
 2. Build the docker image using the following syntax:
 
 
@@ -39,6 +39,7 @@ Build and Move the Docker image to Google Kubernetes Engine:
 
 
 `docker build -t gcr.io/my-project-27779-401121/my-dl-app:latest .`
+
 
 <div align="center">
 <img width="1316" alt="Screenshot 2023-12-03 at 7 11 22 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/bdc83f8b-f486-4b1e-a45a-a865082749d6">
