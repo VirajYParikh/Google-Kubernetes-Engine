@@ -23,10 +23,7 @@ Getting the Google Kubernetes Engine ready for deployment of the docker image an
 
 
 
-
-<div align="center">
-<img width="1316" alt="Screenshot 2023-12-03 at 7 11 22 PM" src="https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/bdc83f8b-f486-4b1e-a45a-a865082749d6">
-</div>
+![image](https://github.com/VirajYParikh/GoogleKubernetesEngine/assets/67093208/43604755-454a-47ed-8653-5129089a3ee1)
 
 4. Install the Google Cloud SDK using: `brew install google-cloud-sdk`
 5. Initialize CLI: `gcloud init`
